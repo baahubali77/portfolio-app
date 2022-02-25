@@ -1,0 +1,86 @@
+.portfolio {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  h1 {
+    font-size: 40px;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .portfolio-list {
+    padding: 5px;
+    overflow: hidden;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 700px;
+      padding: 0;
+
+      .item {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 15px;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 20px;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .item-container {
+    width: 70%;
+    // height: 7;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .type {
+      height: 250px;
+      width: 320px;
+      // padding: 10px;
+      margin: 20px;
+      border: 1px solid rgb(226, 222, 222);
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      transition: all 1s ease;
+      h3 {
+        position: absolute;
+        font-size: 25px;
+        color: white;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      &:hover {
+        background-color: rgb(44, 44, 207);
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

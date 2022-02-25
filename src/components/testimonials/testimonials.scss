@@ -1,0 +1,110 @@
+.testimonials {
+  background-color: white;
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 35px;
+      font-weight: bold;
+      padding: 10px;
+    }
+    .container {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 20px;
+
+      .card {
+        height: 80%;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 15px -8px black;
+
+        border-radius: 10px;
+        transition: all 1s ease;
+
+        &.featured {
+          width: 400px;
+          height: 85%;
+          margin: 35px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        .images {
+          // height: 50%;
+          padding: 10px;
+          margin: 10px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .arrow {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+          }
+
+          .person {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px;
+          }
+
+          .icon {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+          }
+        }
+      }
+
+      .desc {
+        width: 80%;
+        height: 40%;
+        background-color: aliceblue;
+        border-radius: 10px;
+
+        p {
+          padding: 10px;
+        }
+      }
+
+      .name {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          height: 35px;
+          padding-top: 20px;
+          font-size: 20px;
+          overflow: hidden;
+        }
+
+        h4 {
+          font-size: 15px;
+          overflow: hidden;
+          color: rgb(141, 140, 140);
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
