@@ -30,6 +30,10 @@
         cursor: pointer;
         border-radius: 20px;
 
+        &.active {
+          background-color: black;
+          color: white;
+        }
         &:hover {
           background-color: black;
           color: white;
